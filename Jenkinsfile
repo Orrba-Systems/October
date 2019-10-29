@@ -1,10 +1,2 @@
-#!/usr/bin/groovy
-
-def call() {
-node {
-
-stage('Preparation') {
- checkout scm
-   }
-  }
- }
+@Library('oct-shared@master')_
+mvnbuild()
